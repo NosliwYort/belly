@@ -1,26 +1,7 @@
 Belly::Application.routes.draw do
-  get "dishes/new"
-  get "dishes/create"
-  get "dishes/show"
-  get "dishes/destroy"
-  get "meals/create"
-  get "meals/show"
-  get "meals/edit"
-  get "meals/update"
-  get "meals/destroy"
-  get "plans/new"
-  get "plans/crete"
-  get "plans/show"
-  get "plans/edit"
-  get "plans/update"
-  get "plans/destroy"
-  get "users/create"
-  get "users/show"
-  get "users/edit"
-  get "users/update"
-  get "users/destroy"
-  get "pages/index"
-  get "pages/search"
+  resources :users, :plans, :meals, :dishes
+
+  root to: 'pages#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
