@@ -2,7 +2,7 @@ class PlansController < ApplicationController
   def new
   end
 
-  def crete
+  def create
   end
 
   def show
